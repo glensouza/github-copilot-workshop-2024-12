@@ -32,7 +32,7 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 * [Getting Started with GitHub Copilot](./GettingStarted.md)
 * [Let's make a Snake Game using GitHub Copilot](./SnakeGame.md)
 * [Prompt Engineering](./PromptEngineering.md)
-* [Let's make Rock, Paper, Scissors game in Dotnet and Visual Studio using GitHub Copilot](./RockPaperScissors.md)
+* [Let's make Rock, Paper, Scissors game in NodeJS using GitHub Copilot](./RockPaperScissors.md)
 * [Common Scenarios Where GitHub Copilot Shines](./Scenarios.md)
 * [GitHub Copilot Top Features](./TopFeatures.md)
 * [Copilot Best Practices (What Not To Do)](./WhatNotToDo.md)
