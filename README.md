@@ -1,4 +1,4 @@
-# GitHub Copilot Workshop July 2024
+# GitHub Copilot Workshop December 2024
 
 In today's rapid evolving technological landscape the adoption of generative AI tools has become a cornerstone of innovation, propelling developers into a new era of efficiency and creativity.
 
