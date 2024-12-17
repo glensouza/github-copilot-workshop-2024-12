@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors in Dotnet and Visual Studio
+# Rock, Paper, Scissors in NodeJS
 
 In this workshop, we'll explore how to create a Rock, Paper, Scissors game using GitHub Copilot in Visual Studio. We'll understand how GitHub Copilot can help us build a simple game.
 
