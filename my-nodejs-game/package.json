@@ -1,0 +1,16 @@
+{
+  "name": "my-nodejs-game",
+  "version": "1.0.0",
+  "description": "A simple Node.js game project.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/game.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "sinon": "^19.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
