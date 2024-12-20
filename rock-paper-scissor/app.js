@@ -1,5 +1,8 @@
 // node based rock paper scissor game
 
+// Valid choices
+const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+
 // Function to play the game
 
 function playGame(playerChoice) {
