@@ -1,0 +1,75 @@
+@page "/rockpaperscissorlizardspock"
+@rendermode InteractiveAuto
+
+<PageTitle>Rock Paper Scissor Lizard Spock</PageTitle>
+
+<h1>Rock Paper Scissor Lizard Spock</h1>
+
+<p>Select your move:</p>
+
+<div>
+    <button class="btn btn-primary" @onclick="() => PlayMove(Move.Rock)">Rock</button>
+    <button class="btn btn-primary" @onclick="() => PlayMove(Move.Paper)">Paper</button>
+    <button class="btn btn-primary" @onclick="() => PlayMove(Move.Scissors)">Scissors</button>
+    <button class="btn btn-primary" @onclick="() => PlayMove(Move.Lizard)">Lizard</button>
+    <button class="btn btn-primary" @onclick="() => PlayMove(Move.Spock)">Spock</button>
+</div>
+
+@if (result != null)
+{
+    <p>@result</p>
+}
+
+@code {
+    private string? result;
+
+    private enum Move
+    {
+        Rock,
+        Paper,
+        Scissors,
+        Lizard,
+        Spock
+    }
+
+    private void PlayMove(Move playerMove)
+    {
+        var random = new Random();
+        var computerMove = (Move)random.Next(0, 5);
+
+        result = DetermineWinner(playerMove, computerMove);
+    }
+
+    private string DetermineWinner(Move playerMove, Move computerMove)
+    {
+        if (playerMove == computerMove)
+        {
+            return $"It's a tie! Both chose {playerMove}.";
+        }
+
+        return (playerMove, computerMove) switch
+        {
+            (Move.Rock, Move.Scissors) => "You win! Rock crushes Scissors.",
+            (Move.Rock, Move.Lizard) => "You win! Rock crushes Lizard.",
+            (Move.Paper, Move.Rock) => "You win! Paper covers Rock.",
+            (Move.Paper, Move.Spock) => "You win! Paper disproves Spock.",
+            (Move.Scissors, Move.Paper) => "You win! Scissors cuts Paper.",
+            (Move.Scissors, Move.Lizard) => "You win! Scissors decapitates Lizard.",
+            (Move.Lizard, Move.Spock) => "You win! Lizard poisons Spock.",
+            (Move.Lizard, Move.Paper) => "You win! Lizard eats Paper.",
+            (Move.Spock, Move.Scissors) => "You win! Spock smashes Scissors.",
+            (Move.Spock, Move.Rock) => "You win! Spock vaporizes Rock.",
+            (Move.Scissors, Move.Rock) => "You lose! Rock crushes Scissors.",
+            (Move.Lizard, Move.Rock) => "You lose! Rock crushes Lizard.",
+            (Move.Rock, Move.Paper) => "You lose! Paper covers Rock.",
+            (Move.Spock, Move.Paper) => "You lose! Paper disproves Spock.",
+            (Move.Paper, Move.Scissors) => "You lose! Scissors cuts Paper.",
+            (Move.Lizard, Move.Scissors) => "You lose! Scissors decapitates Lizard.",
+            (Move.Spock, Move.Lizard) => "You lose! Lizard poisons Spock.",
+            (Move.Paper, Move.Lizard) => "You lose! Lizard eats Paper.",
+            (Move.Scissors, Move.Spock) => "You lose! Spock smashes Scissors.",
+            (Move.Rock, Move.Spock) => "You lose! Spock vaporizes Rock.",
+            _ => "Invalid move."
+        };
+    }
+}
