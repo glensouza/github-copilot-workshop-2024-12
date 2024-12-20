@@ -1,4 +1,4 @@
-# GitHub Copilot Workshop July 2024
+# GitHub Copilot Workshop December 2024
 
 In today's rapid evolving technological landscape the adoption of generative AI tools has become a cornerstone of innovation, propelling developers into a new era of efficiency and creativity.
 
@@ -32,7 +32,7 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 * [Getting Started with GitHub Copilot](./GettingStarted.md)
 * [Let's make a Snake Game using GitHub Copilot](./SnakeGame.md)
 * [Prompt Engineering](./PromptEngineering.md)
-* [Let's make Rock, Paper, Scissors game in Dotnet and Visual Studio using GitHub Copilot](./RockPaperScissors.md)
+* [Let's make Rock, Paper, Scissors game in NodeJS using GitHub Copilot](./RockPaperScissors.md)
 * [Common Scenarios Where GitHub Copilot Shines](./Scenarios.md)
 * [GitHub Copilot Top Features](./TopFeatures.md)
 * [Copilot Best Practices (What Not To Do)](./WhatNotToDo.md)
